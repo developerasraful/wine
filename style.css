@@ -1,0 +1,223 @@
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+img {
+  max-width: 100%;
+}
+
+.header {
+  background-image: url(./img/wine-3-min-1-scaled.jpg);
+  padding: 380px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.manu {}
+
+.manu ul {}
+
+.manu ul li {
+  display: inline-block;
+}
+
+.manu ul li a {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  color: white;
+  transition: .5s;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+.manu ul li a:hover {
+  color: #5cb280;
+}
+
+.header span a {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  transition: .5s;
+}
+
+.header span a:hover {
+  color: #5cb280;
+}
+
+.mid-img {}
+
+.mid-img img {
+  position: relative;
+  top: 261px;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both; 
+}
+@keyframes up-down {
+  0%{
+    transform: translateY(23px);
+  } 
+  100%{
+    transform: translateY(-23px);
+  }
+}
+.auto2{
+  overflow: hidden;
+}
+.auto2 img{
+  animation: top-bottom 2s ease-in-out infinite alternate-reverse both; 
+}
+@keyframes top-bottom {
+  0%{
+    transform: translateX(30px);
+  } 
+  100%{
+    transform: translateX(-30px);
+  }
+}
+
+.mid-img2 {}
+
+.mid-img2 img {
+  position: relative;
+  top: 109px;
+}
+
+/* contant section  */
+
+.div-im {}
+
+.div-im img {
+  height: 45px;
+  width: auto;
+}
+
+.div-im h2 {
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.div-im p {
+  font-size: 16px;
+  font-weight: 200;
+  color: black;
+}
+
+.div1 {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 2px solid #993e4f;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.div1 h6 {
+  line-height: 18px;
+  padding: 13px 0;
+  transition: .5s;
+}
+
+.new {
+  margin-top: 158px;
+  text-align: center;
+}
+
+.new img {
+  height: 300px;
+  width: 300px;
+}
+
+/* contant section  */
+
+
+.df {
+  margin-top: 70px;
+}
+
+
+.box {
+  width: 270px;
+  height: 350px;
+  margin: 10px auto;
+  box-shadow: 0 0 5px #bababa;
+  overflow: hidden;
+  position: relative;
+  margin-top: 2px;
+}
+
+.box:before,
+.box:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.box:before {
+  bottom: 5%;
+  left: 5%;
+  border-bottom: 2px solid rgb(61, 255, 2);
+  border-left: 2px dashed rgb(2, 7, 255);
+}
+
+.box:after {
+  top: 4.5%;
+  right: 4.4%;
+  border-top: 2px solid rgb(255, 0, 0);
+  border-right: 3px dotted rgb(255, 0, 255);
+}
+
+.box:hover:before,
+.box:hover:after {
+  opacity: 1;
+  width: 90%;
+  height: 90%;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+  display: block;
+  transition: all 0.5s;
+}
+
+.box:hover img {
+  transform: scale(1.05);
+}
+
+.box .box-content {
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+
+.box .name,
+.box .post {
+  display: block;
+  font-size: 25px;
+  line-height: 25px;
+  margin: 0;
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.box .post,
+.box:hover .name {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.box:hover .post {
+  opacity: 1;
+}
